@@ -4,7 +4,7 @@ const problemStatementSchema = new
 mongoose.Schema({
     problemStatement: String,
     description: String,
-    catagory: String,
+    category: String,
 }, {timestamp : true});
 
 const ProblemStatement = mongoose.model('ProblemStatement', problemStatementSchema);
