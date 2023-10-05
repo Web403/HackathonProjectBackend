@@ -17,5 +17,6 @@ app.get("/", (req, res) => {
 readdirSync("./routes").map((routes) =>
   app.use("/api", require("./routes/" + routes))
 );
+// FOR EG : http://localhost:5000/api/register-student || http://localhost:5000/api/students
 
 app.listen(5000, () => console.log(`listening at ${port}`));
